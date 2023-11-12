@@ -17,8 +17,11 @@
 # s and t consist of lowercase English letters.
  
 def is_anagram(s, t):
-    return sorted(s) == sorted(t)
+    return sorted(s) == sorted(t) # returns a sorted list of characters for both words
+# == checks if they are equal to each other
 
 print(is_anagram("anagram", "nagaram"))
 print(is_anagram("race", "care"))
 print(is_anagram("rat", "cat"))
+
+# has a time complexity of O(n log n)
