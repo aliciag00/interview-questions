@@ -55,7 +55,7 @@ def roman_to_int(s):
     prev_value = 0 # keeps track of the last integer
     
     for symbol in s[::-1]:  # Iterate the string in reverse order
-        value = roman_to_int[symbol] # 
+        value = roman_to_int[symbol] # creating to map roman numerals to their corresponding integer
         
         if value < prev_value:
             total -= value
@@ -69,5 +69,5 @@ def roman_to_int(s):
 
 print(roman_to_int("IV"))
 print(roman_to_int("XLC"))
-print(roman_to_int("MCM"))
+print(roman_to_int("MCM")) # printing test runs
 

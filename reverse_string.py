@@ -20,12 +20,13 @@
 # s[i] is a printable ascii character.
 
 def reverse_string(s):
-    left, right = 0, len(s) - 1
+    left, right = 0, len(s) - 1 # left points to the beginning and right points to the end of array
+    # it swaps the characters at these points
 
-    while left < right:
-        s[left], s[right] = s[right], s[left]
+    while left < right: #keeps going as long as left os less than right
+        s[left], s[right] = s[right], s[left] # swaps the characters
         left += 1
-        right -= 1
+        right -= 1 # moves pointers
 
 s1 = ["a", "w", "e", "s", "o", "m", "e"]
 reverse_string(s1)
